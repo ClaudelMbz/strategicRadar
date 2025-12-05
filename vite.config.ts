@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: '/event-clock/', // <--- AJOUTÉ POUR GITHUB PAGES
+    base: '/strategicRadar/', // <--- AJOUTÉ POUR GITHUB PAGES
     server: {
       port: 3000,
       host: '0.0.0.0',
