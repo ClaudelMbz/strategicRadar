@@ -313,10 +313,9 @@ const App = () => {
     setNewsItems([]);
 
     try {
-      const apiKey = process.env.API_KEY; // or import.meta.env.VITE_API_KEY
-      if (!apiKey) throw new Error("Clé API manquante.");
-
-      const ai = new GoogleGenAI({ apiKey });
+      const ai = new GoogleGenAI({
+  apiKey: import.meta.env.VITE_API_KEY
+});
 
       setStatus("Scan : France (Études), Monde (Géopo), Tech (Apps & Disruptions)...");
 
